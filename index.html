@@ -11,9 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   
 </head>
 <body>
@@ -26,20 +26,20 @@
       </div>
 
       <div class="header-nav-container">
-
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li><a href="">ホーム</a></li>
-            <li><a href="">当院について</a></li>
-            <li><a href="">コース・料金</a></li>
-            <li><a href="">お知らせ</a></li>
-            <li><a href="">お客様の声</a></li>
-          </ul>
-        </nav>
-      
-        <a href="" class="reserve-inquiry-container">
-          <button class="btn reserve-inquiry-btn">ご予約・お問い合わせ</button>
-        </a>
+        
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li><a href="">ホーム</a></li>
+              <li><a href="">当院について</a></li>
+              <li><a href="">コース・料金</a></li>
+              <li><a href="">お知らせ</a></li>
+              <li><a href="">お客様の声</a></li>
+            </ul>
+          </nav>
+        
+          <a href="" class="reserve-inquiry-container">
+            <button class="btn reserve-inquiry-btn">ご予約・お問い合わせ</button>
+          </a>
         
 
         <!-- only sp -->
@@ -56,32 +56,70 @@
   </header>
   <main>
     <section id="main-visual">
-      <div class="main-carousel">
-        <div><img src="images/TOP-Carouselgroup1.jpg" alt="診察室" width="980" height="584"></div>
-        <div><img src="images/TOP_CarouselGroup2.jpg" alt="エントランス" width="980" height="584"></div>
-        <div><img src="images/TOP_CarouselGroup3.jpg" alt="施術写真" width="980" height="584"></div>
-        <div><img src="images/TOP-Carouselgroup4.jpg" alt="施術室写真" width="980" height="584"></div>
+      <div class="main-visual-container">
+        <div class="catch-copy-container">
+          <h2 class="catch-copy">根本的な症状改善を<br>サポートします</h2>
+          
+        </div>
+        <div class="carousel">
+          <a href="#">
+            <img src="images/TOP-Carouselgroup1.jpg" alt="診察室" width="980" height="584">
+          </a>
+          <a href="#">
+            <img src="images/TOP_CarouselGroup2.jpg" alt="エントランス" width="980" height="584">
+          </a>
+          <a href="#">
+            <img src="images/TOP_CarouselGroup3.jpg" alt="施術写真" width="980" height="584">
+          </a>
+          <a href="#">
+            <img src="images/TOP-Carouselgroup4.jpg" alt="施術室写真" width="980" height="584">
+          </a>
+        </div>
       </div>
     </section><!-- main-visual -->
 
     <section id="news">
-      <h2 class="section-title">
-        NEWS
-        <span>お知らせ</span>
-      </h2>
-      <ul>
-        <li>
-          <span class="date">2022/12/21</span>
-          <span class="news-title">営業時間</span>
-          <span class="news-description">年末年始の営業時間について</span>
-          <span class="more-information">お知らせ一覧へ</span>
-        </li>
-      </ul>
+      <div class="news-container">
+        <h2 class="section-title">
+          NEWS
+          <span>お知らせ</span>
+        </h2>
+        <ul class="news-list">
+          <li class="date">2022/12/21</li>
+          <li class="news-category">営業時間</li>
+          <li class="news-description">年末年始の営業時間について</li>  
+        </ul>
+        <a href="">→お知らせ一覧へ</a>
+      </div>
     </section><!-- news -->
+
+    <section id="concept">
+      <div class="concept-outer-container">
+        <div class="concept-inner-container">
+
+          <div class="contents-container">
+            <img src="images/Head_01-1.svg" alt="" width="123" height="58">
+            <h2>日々変化する
+体と心を癒す
+パーソナル
+トレーナーとして</h2>
+            <p>当院では、問診にてお客様の症状や生活スタイル、ご希望を丁寧にお伺いした上で施術方針を立てていきます。</p>
+            <p>また、根本的に症状を改善するために、お客様ご自身で行えるケアやストレッチもお伝えします。</p>
+            <p>ご不安な点や疑問点などお気軽にご相談くださいませ。</p>
+            <a href="" class="btn">
+              <img src="images/btn_02.jpg" alt="" width="155" height="32">
+            </a>
+          </div>
+          <div class="concept-images">
+            <img src="images/Group 2126.png" alt="" width="448" height="554">
+          </div>
+        </div>
+      </div>
+    </section>
   </main> 
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!-- slick -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!-- slick -->
   <script src="js/carousel.js"></script><!-- slick -->
   <script src="js/hamburger.js"></script><!-- hamburger-btn -->
 </body>
