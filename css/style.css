@@ -12,7 +12,7 @@ font-family: "Noto Sans JP", sans-serif;*/
 
 body {
   margin: 0;
-  background-color: #fff;
+  padding: 0;
 }
 
 a {
@@ -37,6 +37,7 @@ iframe {
   width: 100%;
   display: block;
 }
+
 
 /* ==========
   parts
@@ -277,7 +278,7 @@ iframe {
   height: 110px;
   filter: blur(10px);
   opacity: 0.6;
-  background-color: #F0F5E1;
+  background-color: #f0f3e7;
   z-index: -1;
 }
 
@@ -376,12 +377,14 @@ iframe {
 ========== */
 
 #concept {
-  margin-bottom: 150px;
+  margin-bottom: 70px;
+  overflow: hidden;
 }
 
 .concept-outer-container {
   position: relative;
   width: 100%;
+  
 }
 
 .concept-outer-container::before {
@@ -392,7 +395,6 @@ iframe {
   color: #dae2c2;
   font-size: 134px;
   z-index:-1;
-  overflow: hidden;
 }
 .concept-inner-container::after {
   position: absolute;
@@ -402,8 +404,6 @@ iframe {
   width: 440px; 
   height: 336px;
   z-index: -1;
-  overflow: hidden;
-  
 }
 
 .concept-inner-container {
@@ -459,30 +459,39 @@ iframe {
 ========== */
 
 #course {
-  position: relative;
-  margin-bottom: 160px;
   font-family: "Noto Sans JP", sans-serif;
+  
+}
+.course-outer-container {
+  position: relative;
+  background-image: url("../images/wave.svg");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  width: 100%;
+  padding-top: 150px;
+  z-index: -10;
+  overflow: hidden;
 }
 
 .course-outer-container::before {
   position: absolute;
-  top: 90px;
-  left: 115px;
+  top: 230px;
+  left: 165px;
   content: "Concept";
   color: #dae2c2;
   font-size: 134px;
-  z-index:-1;
-  overflow: hidden;
+  z-index: -1;
 }
+
 .course-inner-container::after {
   position: absolute;
-  bottom: -110px;
+  bottom: 0;
   right: -80px;
   content: url("../images/BGicon_Green@3x.svg");
   width: 440px; 
   height: 336px;
   z-index: -1;
-  overflow: hidden;
 }
 
 .course-header {
@@ -519,9 +528,18 @@ iframe {
   list-style-type: disc;  
 }
 
+.course-outer-container > .button.plain {
+  margin-bottom: 160px;
+}
+
 /* ==========
   customer-review
 ========== */
+
+#customer-review {
+  margin-bottom: 250px;
+}
+
 .review-header {
   width: 100%;
   margin-bottom: 60px;
@@ -573,6 +591,33 @@ iframe {
   access
 ========== */
 
+#access {
+  background-image: url("../images/wave.svg");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  width: 100%;
+  padding-top: 150px;
+  position: relative;
+}
+/*
+#access::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 500px;
+  background-image: url("../images/wave.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  
+  z-index: -1;
+}
+*/
+
 .access-header > .section-title:nth-of-type(1) {
   width: max-content;
   margin: 0 auto 24px;
@@ -601,6 +646,7 @@ iframe {
   gap: 58px;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .section-title.access {
@@ -627,12 +673,22 @@ iframe {
 
 .footer {
   width: 100%;
-  margin-top: 60px;
+  
+  background-color: #f0f5e1;
 }
 
 .footer-list-container {
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
+  gap: 47px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.footer-nav > li{
+  display: inline-block;
+  margin: 0 13px;
 }
 
 .copyright {
