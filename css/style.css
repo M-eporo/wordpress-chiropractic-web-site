@@ -53,7 +53,8 @@ iframe {
 .section-title {
   text-align: center;
   color: #468459;
-  font-size: 24px;
+  font-size: clamp(18px, 16px + 0.625vw, 24px);
+  min-height: 0vw;
   font-weight: 700;
 }
 
@@ -85,7 +86,6 @@ iframe {
   width: 100%;
   height: 64px;
   padding: 16px 0;
-  
 }
 
 .header-container {
@@ -307,7 +307,7 @@ iframe {
   margin-top: -15px;
   border-top-left-radius: 7% 35%;
   border-bottom-left-radius: 20% 65%;
-  
+  object-fit: cover;
 }
 
 /* ==========
@@ -332,6 +332,7 @@ iframe {
   box-sizing: border-box;
   z-index: 500;
 }
+
 .news-container > .scetion-title {
   font-weight: 700;
   font-size: 24px;
@@ -372,6 +373,27 @@ iframe {
   color: #000;
 }
 
+@media(max-width: 767px) {
+  .news-container {
+    display: block;
+  }
+
+  .news-container > .section-title {
+    text-align: left;
+  }
+  
+/*
+  
+
+  .news-list {
+    grid-area: list;
+  }
+
+  .news-container > a {
+    grid-area: newsBtn
+  }
+  */
+}
 /* ==========
   concept
 ========== */
@@ -486,7 +508,7 @@ iframe {
 
 .course-inner-container::after {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   right: -80px;
   content: url("../images/BGicon_Green@3x.svg");
   width: 440px; 
@@ -537,7 +559,7 @@ iframe {
 ========== */
 
 #customer-review {
-  margin-bottom: 250px;
+  margin-bottom: 50px;
 }
 
 .review-header {
@@ -545,27 +567,68 @@ iframe {
   margin-bottom: 60px;
 }
 
-.review-header > .section-title:nth-of-type(1) {
+.bottom-carousel {
+  height: 320px;
+  z-index: -10;
+}
+
+.bottom-carousel > div {
+  height: 320px;
+}
+
+.bottom-carousel img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.free-title {
+  position:relative;
+}
+
+.free-title::before {
+  content: "";
+  position: absolute;
+  top: clamp(-85px, 6.04vw + 41px, -143px);
+  left: 50%;
+  width: clamp(253px, 36.14vw + 138px, 600px);
+  aspect-ratio: 75/61;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  min-height: 0vw;
+}
+
+.review-header .section-title.upper {
+  position: absolute;
+  top: -2em;
+  left: 50%;
+  transform: translateX(-50%);
   width: max-content;
   margin: 0 auto 24px;
 }
 
-.review-header > .section-title:nth-of-type(1)::before,
-.review-header > .section-title:nth-of-type(1)::after {
+.review-header .section-title.upper::before,
+.review-header .section-title.upper::after {
   display: inline-block;
   width: 16px;
   height: 24px;
 }
 
-.review-header > .section-title:nth-of-type(1)::before {
+.review-header .section-title.upper::before {
   content: url("../images/Head_02_DecoLeft16@3x.svg");
   margin-right: 18px;
 }
 
-.review-header > .section-title:nth-of-type(1)::after {
+.review-header .section-title.upper::after {
   content: url("../images/Head_02_DecoRight16@3x.svg");
   margin-left: 18px;
 }
+
+.review-inner-container {
+  margin-top: 60px;
+}
+
 .reviews {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -600,23 +663,6 @@ iframe {
   padding-top: 150px;
   position: relative;
 }
-/*
-#access::before {
-  content: "";
-  position: absolute;
-  top: -150px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 500px;
-  background-image: url("../images/wave.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: initial;
-  
-  z-index: -1;
-}
-*/
 
 .access-header > .section-title:nth-of-type(1) {
   width: max-content;
