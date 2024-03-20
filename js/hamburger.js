@@ -3,5 +3,8 @@ $(function() {
 		$(this).toggleClass('open');
 		$('.hamburger-btn-area').toggleClass('open');
 		$('.mask').toggleClass('open');
+    $('body').toggleClass('open');
+    return false;
 	});
+
 });

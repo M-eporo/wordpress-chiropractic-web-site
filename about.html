@@ -18,7 +18,7 @@
 </head>
 <body>
   
-  <header class="header">
+  <header class="header relative">
     <div class="header-container w-container">
       <div class="main-logo">
         <a href="#">
@@ -89,68 +89,29 @@
     </div><!-- header-container -->
   </header>
   <main>
-    <section id="main-visual">
-      <div class="main-visual-container">
-        <div class="catch-copy-container">
-          <h2 class="catch-copy">根本的な症状改善を<br>サポートします</h2>
-        </div>
-        <div class="carousel">
-          
-          
-            <picture>
-              <source media="(max-width: 767px)" srcset="images/SP_Mask group.png">
-              <img src="images/Mask group.png" alt="">
-            </picture>
-          
-            <picture>
-              <source media="(max-width: 767px)" srcset="images/SP_Mask group2.png">
-              <img src="images/Mask group2.png" alt="">
-            </picture>
+    <section id="hero">
+      <div class="hero-container">
 
-            <picture>
-              <source media="(max-width: 767px)" srcset="images/SP_Mask group3.png">
-              <img src="images/Mask group3.png" alt="">
-            </picture>
-      
-            <picture>
-              <source media="(max-width: 767px)" srcset="images/SP_Mask group4.png">
-              <img src="images/Mask group4.png" alt="">
-            </picture>
-            
-            <!--
-            <a href="#">
-              <img src="images/Mask group.png" alt="診察室" width="980" height="584">
-            </a>
-            <a href="#">
-              <img src="images/Mask group2.png" alt="エントランス" width="980" height="584">
-            </a>
-            <a href="#">
-              <img src="images/Mask group3.png" alt="施術写真" width="980" height="584">
-            </a>
-            <a href="#">
-              <img src="images/Mask group4.png" alt="施術室写真" width="980" height="584">
-            </a>
-            -->
-        </div><!-- carousel -->
-      </div>
-    </section><!-- main-visual -->
-
-    <section id="news">
-      <div class="news-container">
-        <h2 class="section-title">
-          NEWS
-          <span>お知らせ</span>
-        </h2>
-        <div class="news-items-container">
-          <div class="news-item">
-            <p class="date">2022/12/21</p>
-            <p class="news-category">営業時間</p>
-            <p class="news-description">年末年始の営業時間について</p>  
-          </div>
+        <div class="hero-title-container">
+          <h2 class="hero-title">About<span>当院について</span></h2>
         </div>
-        <a href="">→お知らせ一覧へ</a>
-      </div>
-    </section><!-- news -->
+        <div class="hero-image">
+          <picture>
+            <source media="(max-width: 767px)" srcset="images/SP-About.png">
+            <img src="images/About.png" alt="">
+          </picture>
+          <img src="images/_x31_3.png" alt="">
+        </div>
+
+      </div><!-- hero-container -->
+    </section><!-- hero -->
+
+    <section id="breadcrumb">
+      <ul class="breadcrumb">
+        <li><a href="">ホーム</a></li>
+        <li><a href="">当院について</a></li>
+      </ul>
+    </section><!-- breadcrumb -->
 
     <section id="concept">
       <div class="concept-outer-container">
@@ -178,101 +139,71 @@
       </div><!-- concept-outer-container -->
     </section><!-- concept -->
 
-    <section id="course">
-      <div class="course-outer-container">
-        
-        <div class="course-header">
-          <img class="course-title-image" src="images/Head_02-1.svg" alt="" width="211" height="25">
-          <h3 class="section-title">当院では保険診療、自費診療<br>ともにご対応しております。</h3>
-        </div>
-      
-        <div class="course-inner-container">
+    <section id="flow">
+      <div class="flow concept-outer-container">
+        <div class="flow concept-inner-container">
 
-          <div class="course-item">
-            <img src="images/TOP-insurance1.png" alt="" width="360" height="300">
-            <div class="course-content">
-              <h3 class="content-title">保険診療</h3>
-              <ul class="course-list">
-                <li>骨折・打撲・捻挫・脱臼</li>
-                <li>スポーツ診療</li>
-                <li>交通事故></li>
-              </ul>
+          <div class=" flow concept-content">
+            <div class="logo-title">
+              <img src="images/Head_01_Icon.svg" alt="" width="22" height="20">
+              <h3 class="logo-title-en">Flow</h3>
+              <h3 class="logo-title-jp">施術の流れ</h3>
+            </div>
+
+            <h2>日々変化する
+体と心を癒す
+パーソナル
+トレーナーとして</h2>
+            
+            <ol class="flow-list">
+              <li>受付</li>
+              <li>問診表の記入</li>
+              <li>カウンセリング</li>
+              <li>施術</li>
+              <li>アフターカウンセリング</li>
+            </ol>
+            
+          </div>
+
+          <div class="concept-images">
+            <img src="images/Group 2127.png" alt="" width="448" height="554">
+          </div>
+
+        </div><!-- flow-inner-container -->
+      </div><!-- flow-outer-container -->
+    </section><!-- flow -->
+
+    <section id="service-point">
+      <div class="service-point-outer-container">
+
+        <div class="section-header">
+          <div class="top-title">
+            <h3 class="section-title upper">根本改善のポイント</h3>
+          </div>
+          <h3 class="section-title">お体の状態や生活習慣、ご要望を丁寧にお伺いします。</h3>
+          <h3 class="section-title">ご自身でできるケアなども含めて施術方針をお作りします。</h3>
+        </div><!-- section-header -->
+
+        <div class="service-point-inner-container">
+
+          <div class="points">
+            <div class="point-item">
+              <img src="images/Point1.png" alt="" width="320" height="320">
+              <h3 class="content-title">丁寧なカウンセリング</h3>
+            </div>
+            <div class="point-item">
+              <img src="images/Point2.png" alt="" width="320" height="320">
+              <h3 class="content-title">徹底的分析</h3>
+            </div>
+            <div class="point-item">
+              <img src="images/Point3.png" alt="" width="320" height="320">
+              <h3 class="content-title">施術計画のご提案</h3>
             </div>
           </div>
 
-          <div class="course-item">
-            <img src="images/TOP-self1.png" alt="" width="360" height="300">
-            <div class="course-content">
-              <h3 class="content-title">自由診療</h3>
-              <ul class="course-list">
-                <li>腰痛・肩こり</li>
-                <li>冷え性・だるさ</li>
-                <li>骨盤・背骨矯正</li>
-              </ul>
-            </div>
-          </div>
-          
-        </div><!-- course-inner-container -->
-        <a class="button plain" href="">→コース料金詳細へ</a>
-      </div><!-- course-outer-container -->
-    </section><!-- course -->
-
-    <section id="customer-review">
-      <div class="review-outer-container">
-
-        <div class="review-header">
-          <div class="review-main-visual">
-            <div class="bottom-carousel">
-              <div>
-                <picture>
-                  <source media="(max-width: 767px)" srcset="images/SP-Bottom-Carouselgroup1.png">
-                  <img src="images/Bottom-Carouselgroup1.png" alt="">
-                </picture>
-              </div>
-              <div>
-                <picture>
-                  <source media="(max-width: 767px)" srcset="images/SP-Bottom-Carouselgroup2.png">
-                  <img src="images/Bottom-Carouselgroup2.png" alt="">
-                </picture>
-              </div>
-              <div>
-                <picture>
-                  <source media="(max-width: 767px)" srcset="images/SP-Bottom-Carouselgroup3.png">
-                  <img src="images/Bottom-Carouselgroup3.png" alt="">
-                </picture>
-              </div>
-          </div>
-          <div class="free-title">
-            <h3 class="section-title upper">お客様の声</h3>
-          </div>
-          <h3 class="section-title">痛みの改善に加えて自分で<br>予防もできるようになりました</h3>
-        </div><!-- review-header -->
-
-        <div class="review-inner-container">
-
-          <div class="reviews">
-            <div class="review-item">
-              <img src="images/TOP-user1.png" alt="" width="240" height="240">
-              <h3 class="content-title">S・K様 30代女性</h3>
-              <p>1ヶ月で腰の痛みが軽減しました。自分で自宅でできるケアも教えていただき、お任せしてよかったです。</p>
-            </div>
-            <div class="review-item">
-              <img src="images/TOP-user2.png" alt="" width="240" height="240">
-              <h3 class="content-title">T・M様 40代男性</h3>
-              <p>マラソンで右膝が痛むので、施術を受けています。なぜ痛みが生じるのかを身体の仕組みから教えていただき、普段の練習メニューも工夫できています。</p>
-            </div>
-            <div class="review-item">
-              <img src="images/TOP-user3.png" alt="" width="240" height="240">
-              <h3 class="content-title">S・T様 60代女性</h3>
-              <p>転倒して足を骨折したのをきっかけに、痛みの軽減と筋肉の衰えを防ぐための方針を立てていただいています。今は毎日元気に近所を散歩できています。T様 60代女性</p>
-            </div>
-          </div>
-
-          <a href="" class="button plain">→お客様の声一覧へ</a>
-
-        </div><!-- review-inner-container -->
-      </div><!-- review-outer-container -->
-    </section><!-- customer-review -->
+        </div><!-- service-point-inner-container -->
+      </div><!-- service-point-outer-container -->
+    </section><!-- service-point-review -->
 
     <section id="access">
       <div class="access-outer-container">
