@@ -1142,7 +1142,7 @@ iframe {
 #breadcrumb {
   position: relative;
   margin-top: -10px;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   background-color: #fff;
   z-index: 10;
 }
@@ -1477,4 +1477,45 @@ iframe {
   margin: 24px 0;
   text-align: center;
 }
+}
+
+/* ==========
+  information
+========== */
+
+#contact {
+  margin-bottom: 50px;
+}
+
+.contact-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, -40.35px + 15.02vw, 152px);
+}
+
+form > div {
+  margin: 48px 0 ;
+}
+
+label,
+label + span {
+  font-weight: 700;
+}
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  max-width: 340px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: var(--small-font-size);
+
 }
